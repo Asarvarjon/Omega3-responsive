@@ -10,6 +10,10 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 ul {
     list-style: none;
 }
@@ -27,12 +31,13 @@ nav .container {
 
 
 }
+
 .bar-box {
-    
+
     display: flex;
     flex-direction: column;
 
-    
+
 
 }
 
@@ -50,7 +55,7 @@ nav .container {
 
 .nav-list {
     display: flex;
-    margin-left: 350px;
+    margin-left: auto;
 }
 
 .nav-item {
@@ -97,6 +102,15 @@ nav .container {
 
 .demos-link {
     color: #F04037;
+}
+
+.a-email {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.562737px;
+
+    color: #696871;
+    padding-bottom: 10px;
 }
 
 main .container {
@@ -235,17 +249,18 @@ main .container {
 }
 
 .video-button {
+    overflow: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(50%, -50%);
+    transform: translate(-50%, -50%);
     outline: none;
     border: none;
     border-radius: 50%;
 }
 
 .play-icon {
-  
+
     width: 70px;
 }
 
@@ -274,7 +289,7 @@ main .container {
 
 .advantage-list {
     margin-top: 100px;
-    margin-left: 80px;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -312,7 +327,14 @@ main .container {
     display: flex;
     position: relative;
     margin-top: 100px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 
+}
+
+.drag-img-box {
+    width: 40%;
 }
 
 .drag-img-box::before {
@@ -323,17 +345,13 @@ main .container {
     height: 250px;
     border-radius: 50%;
     background-color: rgba(23, 4, 100, 0.4);
-    bottom: 280px;
+    bottom: 240px;
 }
 
-.oval-image {
-    width: 445px;
-    height: 445px;
-}
 
 .drag-info-box {
     margin-top: 50px;
-    margin-left: 120px;
+    width: 50%;
 
 }
 
@@ -361,19 +379,37 @@ main .container {
     color: rgba(255, 255, 255, 0.7);
 }
 
+.creation-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .creation-image-section {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 
 }
 
 .first-image {
-    width: 380px;
-    height: 515px;
+    width: 30%;
+    height: 500px;
 }
 
 .second-image {
-    width: 730px;
-    height: 515px;
+    width: 70%;
+    height: 500px;
+}
+
+.c-info-box {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .creation-section {
@@ -405,15 +441,16 @@ main .container {
     display: flex;
     flex-direction: row;
     padding-top: 80px;
+    align-items: center;
+    justify-content: space-between;
 
 }
 
-
-.family {
-    width: 445px;
-    height: 445px;
-
+.users-info-section {
+    width: 50%;
 }
+
+
 
 .users-title {
     font-size: 54px;
@@ -429,6 +466,7 @@ main .container {
     line-height: 39px;
     letter-spacing: -0.656526px;
     color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
 }
 
 .users-link {
@@ -448,6 +486,7 @@ main .container {
 .users-image-section {
     position: relative;
     margin-left: 50px;
+    width: 40%;
 }
 
 .users-image-section::after {
@@ -459,7 +498,7 @@ main .container {
     border-radius: 50%;
     background-color: rgba(48, 44, 6, 0.4);
     bottom: 10px;
-    left: 170px;
+    left: 210px;
 }
 
 .questions {
@@ -570,7 +609,7 @@ main .container {
 }
 
 .beta-link {
-    margin-left: 300px;
+    margin-left: auto;
     margin-top: 15px;
     padding: 20px 30px;
     text-decoration: none;
@@ -637,6 +676,12 @@ footer .container {
     .container {
         width: 1000px;
     }
+
+    .users-image-section::after {
+        display: none;
+        width: 60%;
+        height: 60%;
+    }
 }
 
 
@@ -657,16 +702,34 @@ footer .container {
 
     .video-section .container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
+    }
+
+    .video-button {
+        width: 50px ;
+        height: 50px;
     }
 
     .beta-link {
         margin-left: 150px;
     }
 
-  .beta-acsess-section {
+    .beta-acsess-section {
         background-image: none;
+    }
+
+    .users-image-section::after {
+        width: 100%;
+        display: none;
+    }
+
+    .main-info {
+        width: 50%;
+    }
+
+    .main-info-title {
+        line-height: 70px;
     }
 }
 
@@ -682,6 +745,30 @@ footer .container {
         margin-left: 100px;
     }
 
+    main .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-email {
+        width: 50%;
+        margin: 0px;
+        height: auto;
+    }
+
+    .main-form {
+        margin: 0px;
+        height: auto;
+
+    }
+
+    .main-info {
+        width: 70%;
+        padding-top: 40px;
+    }
+
     .main-info-title {
         text-align: center;
         font-size: 48px;
@@ -691,16 +778,18 @@ footer .container {
         text-align: center;
     }
 
+    .video-section  {
+        padding-top: 50px;
+    }
+
+    .video-section .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
     .video-img {
         width: 750px;
     }
-
-    .play-icon {
-        position: absolute;
-        top: 70%;
-        left: 54%;
-    }
-
+ 
     .drag-info-text {
         text-align: center;
     }
@@ -738,6 +827,7 @@ footer .container {
         flex-direction: column;
         align-items: center;
     }
+
     .family {
         width: 320px;
         height: 320px;
@@ -762,6 +852,59 @@ footer .container {
     .beta-link {
         margin-left: 40px;
     }
+
+    .drag-drop-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+    }
+
+    .drag-info-box {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        justify-content: center;
+    }
+
+    .drag-img-box::before {
+        display: none;
+    }
+
+    .users-section .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .users-info-section {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center ;
+    }
+
+    .question-link {
+        display: inline-block;
+        text-align: center;
+        margin-left: 220px;
+        
+    }
+
+    .beta-title {
+        font-size: 42px;
+    }
+    nav .container {
+        padding-left: 0px;
+    }
+
+    main .container  {
+        padding-left: 0px;
+    }
 }
 
 
@@ -775,13 +918,116 @@ footer .container {
         margin-left: 10px;
     }
 
-   
+    .first-image {
+        width: 30%;
+    }
+    .second-image {
+        width: 70%;
+    }
+
+    .advantage-item {
+        width: 45%;
+    }
+
+    .questions {
+        padding-top: 80px;
+    }
+
+    .question-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .question-item {
+        width: 80%;
+    }
+
+    .question-name, .question-text {
+        text-align: center;
+
+    }
+
+    .question-link {
+        margin-left: 150px;
+    }
+    .oval-image {
+        height: 268px;
+    }
+
+    .drag-info-box {
+        margin-top: 0px;
+    }
+
+    .family {
+        height: 268px;
+    }
+
+    .main-second-title, .drag-info-title, .creation-title, .users-title, .questions-title, .beta-title {
+        font-size: 36px;
+        line-height: normal;
+    }
+
+    .beta-acsess-section {
+        padding: 80px 0px;
+    }
+
+    .beta-acsess-section .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .beta-title {
+        text-align: center;
+       
+    }
+
+    .beta-link {
+        margin: 0px;
+        margin-top: 30px;
+    }
+
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+    }
+
+    .footer-list {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-text {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .oval-image, .family {
+        width: 220px;
+        height:220px;
+        object-fit: cover;
+    }
+
+    .users-section .container {
+        padding-left: 0px;
+    }
+
+
 }
+
 
 @media (max-width:720px) {
     .container {
         width: 600px;
-      
+
     }
 
     .nav-list {
@@ -794,14 +1040,15 @@ footer .container {
 
     .later {
         display: block;
-        margin-left: 400px;
+         margin-left: auto;
     }
 
 
     .main .container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
+        margin-top: 70px;
     }
 
     .main-info {
@@ -809,24 +1056,25 @@ footer .container {
     }
 
     .main-email {
-       margin: 30px 200px 0px auto;
-        
+        margin: 30px 200px 0px auto;
+
     }
 
     .video-img {
         width: 95%;
     }
 
-    .play-icon {
-        display: none;
-    }
+    
 
     .advantage-list {
-        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .advantage-item {
-        width: 45%;
+        width: 60%;
     }
 
     .advantages-section .container {
@@ -836,7 +1084,11 @@ footer .container {
     .drag-drop-box {
         flex-direction: column;
         align-items: center;
-        
+
+    }
+
+    .main-email {
+        margin: 0px 0px;
     }
 
     .drag-info-box {
@@ -847,106 +1099,159 @@ footer .container {
         align-items: center;
     }
 
-   .drag-img-box::before {
-       bottom: 50%;
-   }
+    .drag-img-box::before {
+        bottom: 50%;
+    }
 
 
-   .creation-section  .container {
-       display: flex;
-       flex-direction: column-reverse;
-       align-items: center;
-   }
+    .creation-section .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 
-   .first-image {
-       width: 180px;
-       height: 300px;
-   }
+    .oval-image, .family {
+        width: 250px;
+        height: 250px;
+    }
 
-   .second-image {
-       width: 360px;
-       height: 300px;
-   }
+    .first-image {
+        width: 180px;
+        height: 300px;
+    }
 
-   .creation-title, .users-title, .questions-title {
-       font-size: 46px;
-   }
+    .second-image {
+        width: 360px;
+        height: 300px;
+    }
+ 
+    .users-section .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 
-   .creation-text, .users-text, .questions-info {
-       font-size: 18px;
-   }
+    .question-list {
+        align-items: center;
+    }
 
-   .users-section .container {
-       display: flex;
-       flex-direction: column-reverse;
-       align-items: center;
-   }
+    .question-item {
+        width: 80%;
+    }
 
-   .question-list {
-       align-items: center;
-   }
-
-   .question-item {
-       width: 80%;
-   }
-
-   .question-link {
-       margin-left: 120px;
-   }
+    .question-link {
+        margin-left: 120px;
+    }
 
 
-   .beta-acsess-section .container {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-   }
+    .beta-acsess-section .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
 
-   .beta-title {
-       text-align: center;
-       font-size: 46px;
-       margin-bottom: 20px;
-   }
+    .beta-title {
+        text-align: center;
+        font-size: 46px;
+        margin-bottom: 20px;
+    }
 
-   .footer .container {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-   }
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-   .footer-list {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-   }
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-   .footer-text {
-       margin-left: 0px;
-       text-align: center;
-   }
+    .footer-text {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .main-second-title, .drag-info-title, .creation-title, .users-title, .questions-title, .beta-title {
+        font-size: 36px};
 }
 
 @media (max-width:620px) {
     .container {
         width: 500px;
-      
+
     }
 
-    .later {
-        margin-left: 330px;
+    main .container {
+        margin: 0px auto;
+        display: flex ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
+
+    .main-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+     .main-email {
+         width: 80%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         margin: 0px 0px;
+          
+     }
+
+     .main-form { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%
+     }
+
+     .oval-image, .family {
+         width: 220px;
+         height:220px;
+         object-fit: cover;
+     }
+
+     .users-section .container {
+         padding-left: 0px;
+     }
+
+     .users-info-section {
+         width: 90%;
+     }
+
+     .question-link {
+         margin-left: 70px;
+     }
+     
+     .first-image {
+         width: 30%;
+     }
+
+     .second-image {
+         width: 70%;
+     }
+  
 
 }
 
 @media (max-width:520px) {
     .container {
         width: 90%;
-      
+
     }
 
-    .later {
-        margin-left: 160px;
-    }
+    
 
     .advantage-item {
         width: 80%;
@@ -957,32 +1262,77 @@ footer .container {
     }
 
     .first-image {
-        width: 100px;
-        height: 200px;
+        width: 30%;
+        object-fit: cover;
     }
 
     .second-image {
-        width: 260px;
-        height: 200px;
+        width: 68%;
+        object-fit: cover;
     }
 
-    .main .container {
-        padding-left: 10px;
-        margin-left: 0px;
+    .creation-image-section {
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .advantages-section   {
+        padding-bottom: 40px;
+    }
+
+    .creation-section   {
+        padding-top: 30px;
+    }
+     
+
+    .main-info {
+        width: 90%;
     }
 
     .main-email {
-        width: 70%;
-        padding-left: 0px;
+        width: 100%;
+        
+           
+    }
+
+    .main-form {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .users-image-section, .drag-img-box {
+        width: 60%;
         margin-left: 0px;
     }
 
-    .main-second-title, .main-info-title, .drag-info-title, .creation-title, .users-title, .questions-title, .beta-title {
-        font-size: 36px;
+    .main-second-title,
+    .main-info-title,
+    .drag-info-title,
+    .creation-title,
+    .users-title,
+    .questions-title,
+    .beta-title {
+        font-size: 30px;
     }
 
     .questions .container {
         padding-left: 10px;
+    }
+
+    .question-link {
+        margin-left: 20px;
+    }
+
+    .main-info-title {
+        line-height: normal;
+    }
+
+  
+     
+    .c-info-box {
+        width: 90%;
     }
 
 
