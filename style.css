@@ -1093,7 +1093,7 @@ footer .container {
 
     .drag-info-box {
         width: 100%;
-        margin-left: 20px;
+       
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1175,7 +1175,14 @@ footer .container {
     }
 
     .main-second-title, .drag-info-title, .creation-title, .users-title, .questions-title, .beta-title {
-        font-size: 36px};
+        font-size: 36px ;
+
+        
+
+        }
+        .main-email::after {display: none;
+            
+        }
 }
 
 @media (max-width:620px) {
@@ -1209,6 +1216,13 @@ footer .container {
           
      }
 
+     .c-info-box {
+         width: 100%;
+     }
+
+     .drag-info-box {
+         width: 100%;
+     }
      .main-form { 
         display: flex;
         flex-direction: column;
@@ -1227,7 +1241,7 @@ footer .container {
      }
 
      .users-info-section {
-         width: 90%;
+         width: 100%;
      }
 
      .question-link {
@@ -1304,7 +1318,7 @@ footer .container {
      
 
     .main-info {
-        width: 90%;
+        width: 100%;
     }
 
     .main-email {
@@ -1347,9 +1361,6 @@ footer .container {
 
   
      
-    .c-info-box {
-        width: 90%;
-    }
 
 
 }
