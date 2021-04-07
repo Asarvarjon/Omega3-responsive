@@ -911,7 +911,7 @@ footer .container {
 @media (max-width:820px) {
     .container {
         width: 700px;
-        padding-left: 30px;
+        
     }
 
     .main-form {
@@ -1257,6 +1257,18 @@ footer .container {
         width: 80%;
     }
 
+    .question-item{
+        width: 95%;
+    }
+
+    .video-section .container  {
+        padding-left: 0px;
+    }
+
+    .video-img {
+        max-width: 100%;
+    }
+
     .new {
         margin-top: 70px;
     }
@@ -1267,7 +1279,7 @@ footer .container {
     }
 
     .second-image {
-        width: 68%;
+        width: 70%;
         object-fit: cover;
     }
 
@@ -1284,6 +1296,10 @@ footer .container {
 
     .creation-section   {
         padding-top: 30px;
+    }
+
+    .creation-section .container {
+        padding-left: 0px;
     }
      
 
